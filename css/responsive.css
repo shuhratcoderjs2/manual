@@ -1,0 +1,129 @@
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 14px;
+  }
+  .header__nav li a {
+    padding: 0 10px;
+  }
+  main .foto__grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 5px;
+  }
+  .header__logo {
+    margin-right: auto;
+  }
+  .header__nav {
+    position: absolute;
+    right: -100%;
+    top: 60px;
+    min-height: 100vh;
+    -webkit-transition: .5s;
+    transition: .5s;
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__nav__list {
+    background-color: white;
+    position: relative;
+    width: 50vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .header__nav__list li {
+    width: 100%;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .header__nav__list li a {
+    display: block;
+    padding: 15px 7px;
+    margin-left: 40px;
+    color: #1e2d33;
+  }
+  .header__nav__list li:hover {
+    background-color: gray;
+  }
+  .header__nav .navbar__left {
+    width: 50vw;
+  }
+  .header .navbar__active {
+    right: 0 !important;
+  }
+  .header__sotsial .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .box_header {
+    height: 56px;
+  }
+  main .wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .hero {
+    padding: 0 0 0;
+  }
+  main .hero__flex__item:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    padding: 0 0 0;
+  }
+  main .hero__flex__item:last-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  main .haqimda__flex {
+    gap: 10px;
+  }
+  main .haqimda__flex__item {
+    width: 100%;
+  }
+  main .haqimda__flex__item p {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  main .foto__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  main .foto__grid__item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  main .haqimda {
+    padding: 5px;
+  }
+  main .haqimda__flex__item {
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

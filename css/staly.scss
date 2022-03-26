@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import './_var';
+@import './__componet.scss';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // color: #fff !important;
+}
+// teg;lar style
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: $font-light;
+    // background-image: url('https://www.nicepng.com/png/full/933-9335230_main-background-image-background-for-accounting-hd.png');
+    background-repeat: no-repeat;
+    // background-image: url('https://us.123rf.com/450wm/sn333g/sn333g1712/sn333g171200068/91969766-mathematics-line-colorful-horizontal-banner-.jpg?ver=6');
+
+    background-size: 100vw 100vh;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: $black-color;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    // object-fit: cover;
+}
+input, button{
+    border: none;
+    outline: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: $font-bold;
+    line-height: 130%;
+}
+h1{
+    font-size: $font-size-h1;
+}
+h2{
+    font-size: $font-size-h2;
+}
+h3{
+    font-size: $font-size-h3;
+}
+h4{
+    font-size: $font-size-h4;
+}
+h5{
+    font-size: $font-size-h5;
+}
+h6{
+    font-size: $font-size-h6;
+}
+span{
+    color: $red-color;
+}
+p{
+    font-weight: $font-regular;
+    line-height: 150%;
+}
+// classlar style
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    // border: 1px solid ;
+}
+.m-auto{
+    margin-left:  auto;
+    margin-right:  auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.header{
+    padding: 22px 0;
+    position:fixed;
+    top: 0;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 999;
+
+    // border-bottom:1px solid  ;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    &__logo{
+        background-color: rgba(255, 255, 255, 1);
+
+        min-width: 60px;
+        flex-basis: 60px;
+        height: 56px;
+        img{
+            height: 100%;
+        }
+    }
+
+    &__nav{
+         
+        &__list{
+            li{
+                a{
+                    text-transform: uppercase;
+                    font-weight: $font-bold;
+                    padding: 0 25px;
+                    color: $black-color;
+                }
+            }
+        }
+    }
+
+    &__sotsial{
+        li{
+            a{
+                padding: 0 12px;
+                // color: ;
+                width: 50px;
+                display: inline-block;
+                
+            }
+            .telegram{
+                color: #279FDA ;
+            }
+            .instagram{
+                color: #D8226B;
+            }
+            .email{
+                color: aqua;
+            }
+        }
+        .burger{
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            justify-content: space-around;
+            flex-direction: column;
+            border-radius: 10px;
+            padding: 5px;
+            display: none;
+            // gap: 10px;
+            
+            span{
+                border-radius: 5px;
+                width: 80%;
+                height: 3px;
+
+                display: inline-block;
+                background-color: $black-color;
+            }
+        }
+    }
+    
+}
+
+.box_header{
+    height: 100px;
+    width: 100%;
+    z-index: 9999;
+    background-color: red;
+}
+
+main{
+    .hero{
+        // height: 650px;
+        padding: 50px 0 100px;
+        &__flex{
+            justify-content: space-between;
+            &__item{
+                width: 50%;
+                padding: 40px 20px 0 0;
+                align-items: flex-end;
+                justify-content: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-size: 100% 100%;
+                
+                h1{
+                    flex-direction: column;
+                    align-items: flex-start
+                    // justify-content: ;
+                    
+                }
+                p{
+                    margin: 24px 0;
+                    font-size: 20px;
+                }
+                &:last-child{
+                    background-image: url('https://us.123rf.com/450wm/sn333g/sn333g1712/sn333g171200068/91969766-mathematics-line-colorful-horizontal-banner-.jpg?ver=6');
+                    width: 100vw;
+                    overflow: hidden;
+                }
+                img{
+                    width: auto;
+                    height: auto;
+                    transform: skew(3);
+                    animation-name: img ;
+                    animation-duration: 5s;
+                    position: relative;
+                    transition: 1s;
+
+                    @keyframes img {
+                        0%{
+                            right: -100%;
+                        }
+                        100%{
+                            right: 0%;
+                        }
+                    }
+
+
+
+                }
+                // padding: 100px 0 150px;
+            }
+        }
+    }
+
+    .haqimda{
+        background-color: #F7F7F7;
+        padding: 40px 0;
+        &__flex{
+            gap: 30px;
+
+            &__item{
+                width: 50%;
+                &:first-child{
+                    overflow: hidden;
+                    height: 400px;
+                    img{
+                        min-height: 100%;
+                        min-width: 100%;
+                    }
+                }
+                &:last-child{
+                    padding: 10px;
+                }
+                
+                p{
+                    margin: 30px 0px 0px 10px;
+                    padding-right: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .foto{
+        h3{
+            padding: 20px 0;
+            text-align: center;
+        }
+        &__grid{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 5px;
+            &__item{
+                max-width: 400px;
+                // height: 400px;
+                overflow: hidden;
+                img{
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+footer{
+    min-height: 50vh;
+}
