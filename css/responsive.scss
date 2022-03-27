@@ -150,6 +150,9 @@
 
                 &__item{
                     width: 100%;
+                    &:first-child{
+                        height: 300px;
+                    }
                     p{
                         margin-top: 10px;
                     }

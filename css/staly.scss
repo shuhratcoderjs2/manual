@@ -242,7 +242,13 @@ main{
                     height: 400px;
                     img{
                         min-height: 100%;
+                        transition: .3s;
                         min-width: 100%;
+                        transform:scale(1.2);
+                        &:hover{
+                          transform:scale(1);
+
+                        }
                     }
                 }
                 &:last-child{
@@ -268,10 +274,27 @@ main{
             grid-gap: 5px;
             &__item{
                 max-width: 400px;
-                // height: 400px;
+                max-height: 267px;
+                position: relative;
                 overflow: hidden;
                 img{
-
+                    transition: .4s;
+                    position: relative;
+                    // height: 400px;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+                span{
+                    position: absolute;
+                    background-color: rgba(36, 219, 36, 0.918);
+                    text-transform: capitalize;
+                    // bottom: 40px;
+                    bottom: 10px;
+                    left: 0;
+                    padding: 3px 10px  3px 20px;
+                    color: $white-color;
+                    z-index: 33;
                 }
             }
         }
