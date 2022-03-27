@@ -275,7 +275,16 @@ main .haqimda__flex__item:first-child {
 
 main .haqimda__flex__item:first-child img {
   min-height: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
   min-width: 100%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main .haqimda__flex__item:first-child img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 main .haqimda__flex__item:last-child {
@@ -301,7 +310,31 @@ main .foto__grid {
 
 main .foto__grid__item {
   max-width: 400px;
+  max-height: 267px;
+  position: relative;
   overflow: hidden;
+}
+
+main .foto__grid__item img {
+  -webkit-transition: .4s;
+  transition: .4s;
+  position: relative;
+}
+
+main .foto__grid__item img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main .foto__grid__item span {
+  position: absolute;
+  background-color: rgba(36, 219, 36, 0.918);
+  text-transform: capitalize;
+  bottom: 10px;
+  left: 0;
+  padding: 3px 10px  3px 20px;
+  color: white;
+  z-index: 33;
 }
 
 footer {

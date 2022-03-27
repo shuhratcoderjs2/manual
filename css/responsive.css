@@ -103,6 +103,9 @@
   main .haqimda__flex__item {
     width: 100%;
   }
+  main .haqimda__flex__item:first-child {
+    height: 300px;
+  }
   main .haqimda__flex__item p {
     margin-top: 10px;
   }
