@@ -18,6 +18,9 @@
 }
 
 @media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
   .header {
     padding: 5px;
   }
@@ -109,6 +112,28 @@
   main .haqimda__flex__item p {
     margin-top: 10px;
   }
+  main .yordam__info--flex {
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+  main .yordam__info--flex__item {
+    width: 80%;
+    text-align: center;
+  }
+  main .yordam__info--flex__item:first {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  main .yordam__info--flex__item:last-child {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 
 @media (max-width: 576px) {
@@ -122,11 +147,17 @@
 }
 
 @media (max-width: 425px) {
+  html {
+    font-size: 12px;
+  }
   main .haqimda {
     padding: 5px;
   }
   main .haqimda__flex__item {
     width: 100vw;
+  }
+  main .yordam__info--flex__item {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

@@ -8,13 +8,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/staly.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <style>
+        .slideUp{
+            animation-name: position;
+        }
+        .slideUp1{
+            animation-name: pos;
+
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count:1;
+            animation-fill-mode: forwards;
+            transition: .5s;
+                }
+                @keyframes pos {
+                    0%{
+                        right: 30%;
+                    }
+                    100%{
+                        right: 0%;
+                        opacity: 1;
+                    }
+                }
+        
+    </style>
 </head>
 <body>
     <header class="header">
         <div class="container flex">
-            <div class="header__logo">
-                <img src="./img/logo_t.png" alt="logo">
-            </div>
+            <a class="header__logo" href="#top">
+                <img src="./img/logo_t.jpg" alt="logo">
+            </a>
     
             <nav class="header__nav m-auto navbar ">
                 <div class="navbar__left"></div>
@@ -24,7 +48,7 @@
                     <li><a href="#video">video</a></li>
                     <li><a href="#work">ish faoliyatim</a></li>
                     <li><a href="#hamkasb">hamkasblarim</a></li>
-                    <li><a href="#yoshlik">mening yoshligim</a></li>
+                    <li><a href="#yoshlik">sinfdoshlarim</a></li>
                 </ul>
             </nav>
     
@@ -41,9 +65,9 @@
             </ul> 
         </div>
     </header>
-    <div class="box_header"></div>
+    <div class="box_header" id="top"></div>
     <main>
-        <section class="hero section">
+        <section class="hero section" >
             <div class="container">
                 <div class="hero__flex flex wrap">
                     <div class="hero__flex__item col-12" >
@@ -127,7 +151,302 @@
             </div>
         </section>
 
+        
+        <section class="yordam" id="hamkasb">
+            <div class="yordam__icon">
 
+            </div>
+
+            <div class="yordam__info ">
+                <div class="yordam__info--title container">
+                    <h2>
+                        ASIA CONSULT jamoasi
+                    </h2>
+                </div>
+
+                <div class="yordam__info ">
+                    <div class="yordam__info--flex flex ">
+                        <div class="yordam__info--flex__item info__text ">
+                            <span>
+                                1/4
+                            </span>
+                            <h4>
+                                2021 yil yakuni
+                            </h4>
+                            <p>
+                                Олий ўқув юрти, таълим муассасалари, дастурлар, ва ўқув тўловлари бўйича тўлиқ маслаҳат. Танлаган университетларингизнинг кириш талаблари ҳақида сизни хабардор қилиш.
+                            </p>
+                        </div>
+                        <div  class="yordam__info--flex__item info--img flex">
+                            <img class="myImg" src="./img/xamkasb1.jpg" alt="images"  id="myImg">
+                            <div class="absolute--bg"></div>
+                        </div>
+                    </div>
+                    <div class="yordam__info--flex flex">
+                        <div class="yordam__info--flex__item info__text ">
+                            <span>
+                                2/4
+                            </span>
+                            <h4>
+                               Chorvoq dam olish maskanida
+                            </h4>
+                            <p>
+                                Талаба танлаган университетга қабул қилиш стратегиясини ишлаб чиқиш, Мотивацион хат ва ариза шаклини ёзиш ва тақдим етиш учун ҳужжатларни тўплашда ёрдам бериш
+                            </p>
+                        </div>
+                        <div class="yordam__info--flex__item info--img flex">
+                            <img class="myImg" src="./img/xamkasb2.jpg" alt="images">
+                        </div>
+                    </div>
+                    
+                    <div class="yordam__info--flex flex">
+                        <div class="yordam__info--flex__item info__text ">
+                            <span>
+                                3/4
+                            </span>
+                            <h4>
+                               Xorijiy hamkorlar bilan uchrashuv
+                            </h4>
+                            <p>
+                                Тақдим етиш учун ҳужжатларни тўлиқ тайёрлаш, Ариза шаклини тўлдириш, университетларга ҳужжат топшириш, Талабалик визасига аризаси, Турар жой билан боғлиқ бўлган харажатларни ҳисоблаш.
+                            </p>
+                        </div>
+                        <div class="yordam__info--flex__item info--img flex">
+                            <img class="myImg" src="./img/xamkasb3.jpg" alt="images">
+                        </div>
+                    </div>
+
+                    <div class="yordam__info--flex flex">
+                        <div class="yordam__info--flex__item info__text ">
+                            <span>
+                                4/4
+                            </span>
+                            <h4>
+                               Jamoaviy tadbir
+                            </h4>
+                            <p>
+                                Имтиҳонлар ва ўқув жараёнида талабаларга ёрдам ва маслаҳат бериш.
+                            </p>
+                        </div>
+                        <div class="yordam__info--flex__item info--img flex">
+                            <img  class="myImg" src="./img/xamkasb4.jpg" alt="images">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+       
+        <!-- <section class="news" id="video">
+            <h2>
+                Videolar jamlanmasi
+            </h2>
+
+            <div class="news__flex flex">
+                <div class="news__flex__left">
+                    <div class="news__flex__left--img">
+                        <a href="#" >
+                            Batafsil
+                        </a>
+                        <img src="./img/00005.jpg" alt="news-imgage">
+                    </div>
+
+                    <div class="news__flex__left--text">
+                        <span class="clock">
+                            16. 08. 2021
+                        </span>
+                        <h4>
+                            💯Xarajatsiz ta’lim endi savsata emas !!!
+                        </h4>
+                        
+                        <a href="#" class="batafsil"> Батафсил</a>
+
+                    </div>
+                </div>
+
+                 <div class="news__flex__right flex ">
+                    <div class="news__flex__right__item flex">
+                        <div class="news__flex__right__item--img">
+                            <a href="#" >
+                                Batafsil
+                            </a>
+                            <img src="./img/00002.jpg" alt="news">
+                        </div>
+                        
+                        <div class="news__flex__right__item--text">
+                            <span class="clock">
+                                16. 08. 2021
+                            </span>
+
+                            <p>
+                                🇸🇬 Asia Consult talabalar uchun Singapurda ta’lim olish imkoniyatini beradi !
+                            </p>
+
+                            <a href="#" class="batafsil"> Батафсил</a>
+
+                        </div>
+
+                    </div>
+
+                   <div class="news__flex__right__item flex">
+                        <div class="news__flex__right__item--img">
+                            <a href="#" >
+                                Batafsil
+                            </a>
+                            <img src="./img/00003.jpg" alt="">
+                        </div>
+                        
+                        <div class="news__flex__right__item--text">
+                            <span class="clock">
+                                16. 08. 2021
+                            </span>
+
+                            <p>
+                                Rossiyaga sayohat. Asia News 2. Lorem ipsum dolor sit.
+                            </p>
+
+                            <a href="#" class="batafsil"> Батафсил</a>
+
+                        </div>
+
+                    </div>
+                    <div class="news__flex__right__item flex">
+                        <div class="news__flex__right__item--img">
+                            <a href="#" >
+                                Batafsil
+                            </a>
+                            <img src="./img/00004.jpg" alt="">
+                        </div>
+                        
+                        <div class="news__flex__right__item--text">
+                            <span class="clock">
+                                16. 08. 2021
+                            </span>
+
+                            <p>
+                                🇺🇸Kompaniyamizga murojaat qiling va Amerika davlatining eng taniqli va mashhur shtatlarida ta’lim oling. !
+                            </p>
+
+                            <a href="#" class="batafsil"> Батафсил</a>
+
+                        </div>
+
+                    </div>
+
+                    
+                </div> 
+
+            </div>
+        </section>  -->
+
+        <section class="xodim" id="yoshlik">
+            <h2>
+                Sindoshlarim
+            </h2>
+            <div class="xodim__flex flex">
+                <div class="xodim__flex__item">
+                    <div class="xodim__flex__item--img">
+                        <img src="img/sinfdosh-1.jpg" alt="xodim">
+                    </div>
+                    <div class="xodim__flex__item--text">
+                        <div class="star flex">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                           
+                        </div>
+                        <h3>Jahongir Rahmanov</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, pariatur.
+                        </p>
+                    </div>
+                </div>
+                <div class="xodim__flex__item">
+                    <div class="xodim__flex__item--img">
+                        <img src="img/sinfdosh-3.jpg" alt="xodim">
+                    </div>
+                    <div class="xodim__flex__item--text">
+                        <div class="star flex">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                           
+                        </div>
+                        <h3>Jahongir Rahmanov</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, pariatur.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="xodim__flex__item">
+                    <div class="xodim__flex__item--img">
+                        <img src="img/sinfdosh-4.jpg" alt="xodim">
+                    </div>
+                    <div class="xodim__flex__item--text">
+                        <div class="star flex">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                           
+                        </div>
+                        <h3>Jahongir Rahmanov</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, pariatur.
+                        </p>
+                    </div>
+                </div>
+                <div class="xodim__flex__item">
+                    <div class="xodim__flex__item--img">
+                        <img src="img/sinfdosh-5.jpg" alt="xodim">
+                    </div>
+                    <div class="xodim__flex__item--text">
+                        <div class="star flex">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                           
+                        </div>
+                        <h3>Jahongir Rahmanov</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, pariatur.
+                        </p>
+                    </div>
+                </div>
+                <div class="xodim__flex__item">
+                    <div class="xodim__flex__item--img">
+                        <img src="img/sinfdosh.jpg" alt="xodim">
+                    </div>
+                    <div class="xodim__flex__item--text">
+                        <div class="star flex">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                           
+                        </div>
+                        <h3>Jahongir Rahmanov</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, pariatur.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <div class="xodim__flex flex">
+               
+            </div> -->
+        </section>
          <!-- 
              Men haqimda qisqacha!
              Tohir Ro'ziboyevich Toshboyev 2002 yil 13 avgust oyida Sirdaryo viloyati Sayxunobod tumani 
@@ -142,8 +461,15 @@
     </main>
     <section id="work">
     </section>
-    <footer></footer>
+    <footer>
+        <button onclick="close()">exit</button>
+    </footer>
     <script src="./js/index.js"></script>
+    <script>
+        function close(){
+            window.closed()
+        }
+    </script>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
