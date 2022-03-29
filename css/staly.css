@@ -15,7 +15,6 @@ body {
   font-weight: 300;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  overflow-x: hidden;
 }
 
 ul {
@@ -298,6 +297,10 @@ main .haqimda__flex__item p {
   font-size: 20px;
 }
 
+main .foto {
+  padding: 20px 0;
+}
+
 main .foto h3 {
   padding: 20px 0;
   text-align: center;
@@ -448,6 +451,7 @@ main .yordam__info--flex .info__text span {
   font-size: 76px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  z-index: 10;
 }
 
 main .yordam__info--flex .info__text h4 {

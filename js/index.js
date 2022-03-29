@@ -19,7 +19,7 @@ function g(){
   let img = document.querySelectorAll(".myImg")
   let text = document.querySelectorAll(".info__text")
   function myFunction() {
-      let height = window.innerHeight *2.2
+      let height = window.innerHeight * 1.5
 
           img.forEach(item =>{
               if (document.body.scrollTop > height || document.documentElement.scrollTop > height) {
