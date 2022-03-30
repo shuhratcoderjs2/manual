@@ -49,6 +49,7 @@ h2 {
 }
 
 h3 {
+  text-align: center;
   font-size: 2.475rem;
 }
 
@@ -793,6 +794,74 @@ main .xodim__flex__item--text p {
   line-height: 1.79;
   letter-spacing: normal;
   color: #797c7f;
+}
+
+main .work {
+  padding: 30px 0;
+}
+
+main .work h2 {
+  color: #ee444a;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+}
+
+main .work h3 {
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+main .work .wrapper .container {
+  padding: 0;
+}
+
+main .work .question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px 80px 20px 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+main .work .borderbox {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 5px 0;
+}
+
+main .work .question::after {
+  content: "\002B";
+  font-size: 2.2rem;
+  position: absolute;
+  right: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .work .question.active::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+main .work .answercont {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+main .work .answer {
+  padding: 0 20px 20px;
+  line-height: 1.5rem;
 }
 
 footer {
