@@ -831,6 +831,10 @@ main .work .question {
   text-transform: uppercase;
 }
 
+main .work .sentabr p {
+  margin-bottom: 40px;
+}
+
 main .work .borderbox {
   border: 1px solid black;
   border-radius: 20px;
